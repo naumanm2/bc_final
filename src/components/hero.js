@@ -7,7 +7,6 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="container">
-        <div className="main-menu">
           <div className="main-list">
             <ul className="list">
               <div className="main-list-items">
@@ -46,7 +45,6 @@ const Hero = () => {
                 <Logo_b />
               </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
