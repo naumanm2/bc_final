@@ -35,6 +35,7 @@ body {
 
 a {
   color: $pink;
+  text-decoration: none;
   &:hover {
     text-decoration: underline;
   }
@@ -207,17 +208,21 @@ header {
   width: 90vw;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-end;
   .lcol {
-    width: 30%;
+    width: 32.33%;
     text-align: center;
     font-size: 2em;
+
     ul {
       list-style-type: none;
       padding: 0;
       margin: 0;
       text-align: left;
+      li {
+        flex-basis: 0 0 33.3333%;
+      }
     }
     @media (max-width: 1440px) {
       font-size: 1.5em;
@@ -232,18 +237,19 @@ header {
       font-size: 0.75em;
     }
   }
-  .col-3 {
-    text-align: right;
-    align-items: flex-end;
-    svg {
-      position: fixed;
-      bottom: 20px;
-      right: 6%;
-      width: 150px;
-      z-index: 1;
-      @media (max-width: 600px) {
-        width: 75px;
-      }
+}
+
+.col-3 {
+  text-align: right;
+  align-items: flex-end;
+  svg {
+    position: fixed;
+    bottom: 20px;
+    right: 6%;
+    width: 150px;
+    z-index: 1;
+    @media (max-width: 600px) {
+      width: 75px;
     }
   }
 }
@@ -414,6 +420,72 @@ footer {
       @media (max-width: 600px) {
         width: 100px;
       }
+    }
+  }
+}
+
+.nav-right {
+  position: fixed;
+  top: 40%;
+  right: 5vw;
+  ul {
+    text-align: right;
+    list-style-type: none;
+    li {
+      font-size: 1.5em;
+      padding: 10px 0;
+      &.active {
+        text-decoration: underline;
+      }
+      @media (max-width: 600px) {
+        font-size: 1em;
+        padding: 7px 0;
+      }
+    }
+  }
+}
+
+.menu-container {
+  .wrapper {
+    width: 100%;
+    text-align: center;
+    .inner-menu {
+      img {
+        width: 60vw;
+      }
+    }
+  }
+}
+
+.about-menu {
+  height: 80vh;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  .headline {
+    h1 {
+      font-size: 6em;
+      font-weight: normal;
+    }
+    p {
+      font-size: 2em;
+    }
+  }
+  .img-wrapper {
+    margin-top: 30px;
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    .menu-image {
+      background-color: $black;
+      width: 100vw;
+      height: 30vw;
+      min-width: 260px;
+      min-height: 260px;
+      margin-bottom: 400px;
+      
     }
   }
 }

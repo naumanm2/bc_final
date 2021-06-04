@@ -6,6 +6,8 @@ import About from '../components/about'
 import ImageGalleryMain from '../components/imagegallerymain'
 import Slogan from '../components/slogan'
 import Footer from '../components/footer'
+import Logo from '../components/logo'
+import Sidebar from '../components/sidebar'
 
 import '../styles/styles.scss'
 
@@ -14,10 +16,12 @@ const index = () => {
     <>
     <Header />
     <Hero />
+    <Logo />
     <About />
     <ImageGalleryMain />
     <Slogan />
     <Footer />
+    <Sidebar active="lunch"/>
     </>
   )
 }

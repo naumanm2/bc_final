@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "gatsby";
+
 import Logo_b from "../icons/SVG/balls_pink_1.svg";
 
 const Footer = () => {
@@ -9,10 +11,18 @@ const Footer = () => {
         <div className="wrapper">
           <div className="links">
             <ul className="lower-links">
-              <li className="i1">lunch</li>
-              <li className="i2">menu</li>
-              <li className="i3">beer</li>
-              <li className="i4">wine</li>
+              <li className="i1">
+                <Link to="/lunch">lunch</Link>
+              </li>
+              <li className="i2">
+                <Link to="/alacarte">à la carte</Link>
+              </li>
+              <li className="i3">
+                <Link to="/wine">wine</Link>
+              </li>
+              <li className="i4">
+                <Link to="/beer">beer</Link>
+              </li>
             </ul>
           </div>
           <div className="middle-links">
@@ -23,15 +33,23 @@ const Footer = () => {
               <li className="i4">su 12-20</li>
             </ul>
             <ul className="right-media-links">
-              <li className="i1">instagram</li>
-              <li className="i2">facebook</li>
-              <li className="i3">wolt</li>
-              <li className="i4">foodora</li>
+              <li className="i1">
+                <a href="https://www.instagram.com/burgercompanyhki/">instagram</a>
+              </li>
+              <li className="i2">
+              <a href="https://www.facebook.com/helsinkiburgerco/">facebook</a>
+              </li>
+              <li className="i3">
+                <a href="https://wolt.com/en/fin/helsinki/restaurant/helsinki-burger-co-uusi">wolt</a>
+              </li>
+              <li className="i4">
+                <a href="https://www.foodora.fi/en/restaurant/new/orqy/helsinki-burger-co">foodora</a>
+              </li>
             </ul>
           </div>
         </div>
         <div className="footer-logo">
-            <Logo_b />
+          <Logo_b />
         </div>
       </div>
     </footer>

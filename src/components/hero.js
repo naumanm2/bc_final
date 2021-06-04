@@ -1,7 +1,6 @@
 import React from "react";
 
 import { Link } from "gatsby";
-import Logo_b from "../icons/SVG/balls_pink_1.svg";
 
 const Hero = () => {
   return (
@@ -38,11 +37,6 @@ const Hero = () => {
               <div className="see_more">
                 <div className="row-1">pictures and stuff</div>
                 <div className="row-2">I</div>
-              </div>
-            </div>
-            <div className="lcol col-3">
-              <div className="logo-right_bot">
-                <Logo_b />
               </div>
             </div>
         </div>
