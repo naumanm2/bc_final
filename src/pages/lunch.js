@@ -3,26 +3,23 @@ import React from "react";
 import Header from "../components/header";
 import Logo from "../components/logo";
 import Sidebar from "../components/sidebar";
-import Footer from "../components/footer";
 import Menu from "../components/menu";
 import AboutMenu from "../components/aboutmenu";
+import Slogan from "../components/slogan";
+import Footer from "../components/footer";
 
-import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image";
 
-const lunch = ({ data }) => {
-
-  const image = <StaticImage 
-                  src="../images/alacarte.png"
-                  alt="a la carte"
-                  />
-
+const lunch = () => {
+  const image = <StaticImage src="../images/food_menu.png" alt="a la carte" />;
   return (
     <>
       <Header />
       <Logo />
-      <AboutMenu image={image} />
+      <AboutMenu headline="lunch list" />
       <Menu menu={image} />
       <Sidebar active="lunch" />
+      <Slogan />
       <Footer />
     </>
   );

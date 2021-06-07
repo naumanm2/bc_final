@@ -17,7 +17,7 @@ const Header = () => {
             </div>
             <nav>
               <div className="lower-nav">
-                <a href="https://wolt.com/fi/fin/helsinki/restaurant/helsinki-burger-co">
+                <a href="https://wolt.com/fi/fin/helsinki/restaurant/helsinki-burger-co-uusi">
                   wolt
                 </a>
                 <Link to="/lunch">

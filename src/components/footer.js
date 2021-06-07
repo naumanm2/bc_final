@@ -34,22 +34,32 @@ const Footer = () => {
             </ul>
             <ul className="right-media-links">
               <li className="i1">
-                <a href="https://www.instagram.com/burgercompanyhki/">instagram</a>
+                <a href="https://www.instagram.com/burgercompanyhki/">
+                  instagram
+                </a>
               </li>
               <li className="i2">
-              <a href="https://www.facebook.com/helsinkiburgerco/">facebook</a>
+                <a href="https://www.facebook.com/helsinkiburgerco/">
+                  facebook
+                </a>
               </li>
               <li className="i3">
-                <a href="https://wolt.com/en/fin/helsinki/restaurant/helsinki-burger-co-uusi">wolt</a>
+                <a href="https://wolt.com/en/fin/helsinki/restaurant/helsinki-burger-co-uusi">
+                  wolt
+                </a>
               </li>
               <li className="i4">
-                <a href="https://www.foodora.fi/en/restaurant/new/orqy/helsinki-burger-co">foodora</a>
+                <a href="https://www.foodora.fi/en/restaurant/new/orqy/helsinki-burger-co">
+                  foodora
+                </a>
               </li>
             </ul>
           </div>
         </div>
         <div className="footer-logo">
-          <Logo_b />
+          <Link to="/">
+            <Logo_b />
+          </Link>
         </div>
       </div>
     </footer>

@@ -1,19 +1,27 @@
-import React from 'react'
+import React from "react";
 
-import Header from '../components/header'
-import Logo from '../components/logo'
-import Sidebar from '../components/sidebar'
-import Footer from '../components/footer'
+import Header from "../components/header";
+import Logo from "../components/logo";
+import Sidebar from "../components/sidebar";
+import Menu from "../components/menu";
+import AboutMenu from "../components/aboutmenu";
+import Slogan from "../components/slogan";
+import Footer from "../components/footer";
+import { StaticImage } from "gatsby-plugin-image";
 
 const beer = () => {
-    return (
-        <>
-        <Header />
-        <Logo />
-        <Sidebar active='beer' />
-        <Footer />
-        </>
-    )
-}
+  const image = <StaticImage src="../images/beer_menu.png" alt="beer list" />;
+  return (
+    <>
+      <Header />
+      <Logo />
+      <AboutMenu headline="beer" />
+      <Menu menu={image} />
+      <Sidebar active="beer" />
+      <Slogan />
+      <Footer />
+    </>
+  );
+};
 
-export default beer
+export default beer;
