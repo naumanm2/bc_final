@@ -1,16 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-const ImageGalleryMain = () => {
+import { useStaticQuery, graphql } from "gatsby";
+import _ from "lodash";
+
+const ImageGalleryMain = ({ images }) => {
+  // const { images } = _.get(data, "allInstagramContent.edges");
+  console.log(images);
+
   return (
     <>
       <div className="img-gallery-main">
         <div className="container">
           <div className="img-container">
+          <h1>our instagram photos</h1>
+          <p>clicking on one will redirect you to our instagram page</p>
             <div className="gridcontainer">
-              <div className="griditem item1">
-                <StaticImage src="image1" alt="image1" />
+              {images.edges.map((post, i) => 
+                <div className={`griditem item${i+1}`}>
+                  <a href={`${post.node.permalink}`}>
+                  <GatsbyImage
+                    image={post.node.localImage.childImageSharp.gatsbyImageData}
+                    alt={`image${i}`}
+                  />
+                  </a>
+                </div>
+              )}
+              {/* <div className="griditem item1">
+                <StaticImage src={post} alt="image1" />
               </div>
               <div className="griditem item2">
                 <StaticImage src="image2" alt="image2" />
@@ -38,7 +56,7 @@ const ImageGalleryMain = () => {
               </div>
               <div className="griditem item10">
                 <StaticImage src="image10" alt="image10" />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

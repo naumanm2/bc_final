@@ -10,7 +10,7 @@ import Footer from "../components/footer";
 import { StaticImage } from "gatsby-plugin-image";
 
 const beer = () => {
-  const image = <StaticImage src="../images/beer_menu.png" alt="beer list" />;
+  const image = <StaticImage src="../menus/menu-screens_offwhite2.png" alt="beer list" />;
   return (
     <>
       <Header />

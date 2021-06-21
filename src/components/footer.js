@@ -27,10 +27,11 @@ const Footer = () => {
           </div>
           <div className="middle-links">
             <ul className="left-opening-times">
-              <li className="i1">hernesaarenkatu 17</li>
-              <li className="i2">ma-to 11-20</li>
-              <li className="i3">pe-la 12-20</li>
-              <li className="i4">su 12-20</li>
+              <li className="i1">040-7092543</li>
+              <li className="i2">hernesaarenkatu 17</li>
+              <li className="i3">ma-to 11-21</li>
+              <li className="i4">pe-la 12-21</li>
+              <li className="i5">su 12-21</li>
             </ul>
             <ul className="right-media-links">
               <li className="i1">

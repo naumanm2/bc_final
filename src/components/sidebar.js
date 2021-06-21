@@ -7,7 +7,7 @@ const Sidebar = ({ active }) => {
     <div>
       <div className="nav-right">
         <ul className="nav-links">
-          <li className={"lunch" + (active === "lunch" ? " active" : "")}>
+          <li className={"i1 lunch" + (active === "lunch" ? " active" : "")}>
             <Link to="/lunch">lunch</Link>
           </li>
           <li className={"i2 alacarte " + ( active  === "alacarte" ? "active" : "")}>

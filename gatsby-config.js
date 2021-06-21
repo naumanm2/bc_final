@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: "burger company website",
@@ -9,6 +13,12 @@ module.exports = {
       resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: "274010639",
+      },
+    },
+    {
+      resolve: `gatsby-source-instagram-all`,
+      options: {
+        access_token: process.env.INSTAGRAM_TOKEN,
       },
     },
     {

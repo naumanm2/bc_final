@@ -27,16 +27,16 @@ const Hero = () => {
           <div className="lower-main">
             <div className="lcol col-1">
               <ul className="opening-times">
-                <li className="i1">hernesaarenkatu 17</li>
-                <li className="i2">ma-to 11-20</li>
-                <li className="i3">pe-la 12-20</li>
-                <li className="i4">su 12-20</li>
+                <li className="i2">takeaway: <br></br>040-7092543</li>
+                <li className="i3">hernesaarenkatu 17</li>
+                <li className="i4">ma-to 11-20</li>
+                <li className="i5">pe-la 12-20</li>
+                <li className="i6">su 12-20</li>
               </ul>
             </div>
             <div className="lcol col-2">
               <div className="see_more">
-                <div className="row-1">pictures and stuff</div>
-                <div className="row-2">I</div>
+                <div className="row-1">pictures and stuff below</div>
               </div>
             </div>
         </div>

@@ -10,7 +10,7 @@ import Slogan from "../components/slogan";
 import { StaticImage } from "gatsby-plugin-image";
 
 const alacarte = () => {
-  const image = <StaticImage src="../images/food_menu.png" alt="à la carte" />;
+  const image = <StaticImage src="../menus/menu-screens_offwhite.png" alt="à la carte" />;
   return (
     <>
       <Header />

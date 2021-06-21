@@ -11,7 +11,7 @@ import Footer from "../components/footer";
 import { StaticImage } from "gatsby-plugin-image";
 
 const lunch = () => {
-  const image = <StaticImage src="../images/food_menu.png" alt="a la carte" />;
+  const image = <StaticImage src="../menus/menu-screens_offwhite.png" alt="a la carte" />;
   return (
     <>
       <Header />

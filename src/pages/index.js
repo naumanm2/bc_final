@@ -9,21 +9,43 @@ import Footer from '../components/footer'
 import Logo from '../components/logo'
 import Sidebar from '../components/sidebar'
 
+import { graphql } from 'gatsby'
+
 import '../styles/styles.scss'
 
-const index = () => {
+const index = ({data}) => {
+
+
   return (
     <>
     <Header />
     <Hero />
     <Logo />
     <About />
-    <ImageGalleryMain />
+    <ImageGalleryMain images={data.allInstagramContent}/>
     <Slogan />
     <Footer />
-    <Sidebar active="lunch"/>
     </>
   )
 }
 
 export default index
+
+export const query = graphql`
+  query InstagramPosts {
+    allInstagramContent(limit: 12) {
+      edges {
+        node {
+          id
+          caption
+          permalink
+          localImage {
+            childImageSharp {
+                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, width: 500, height: 500)
+            }
+          }
+        }
+      }
+    }
+  }
+`

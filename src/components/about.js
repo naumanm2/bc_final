@@ -7,14 +7,14 @@ const About = () => {
     <div className="about">
       <div className="container">
         <div className="main-image">
-          <StaticImage src="main-image.jpg" alt="main-image" />
+          <StaticImage src="../images/front.jpg" alt="main-image" />
         </div>
         <div className="aboutuscontainer">
           <p>
-            we opened the business in 2021. our cloud kitchen in
-            Tyynenemerenkatu proved muy successful. we still operate on wolt as
+            we opened the business late 2020 after our cloud kitchen in
+            Tyynenemerenkatu proved very successful. we still operate on wolt as
             well as foodora but now we also distribute our goods in a physical
-            location. in Hernesaari. come enjoy if u want.
+            location. in Hernesaari. come enjoy.
           </p>
           <p>
             we’re located a stone throw away from Eiranranta. come after a dip
