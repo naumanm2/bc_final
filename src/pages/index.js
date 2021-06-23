@@ -14,8 +14,6 @@ import { graphql } from 'gatsby'
 import '../styles/styles.scss'
 
 const index = ({data}) => {
-
-
   return (
     <>
     <Header />

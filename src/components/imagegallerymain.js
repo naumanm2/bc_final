@@ -3,7 +3,6 @@ import React from "react";
 import { GatsbyImage} from "gatsby-plugin-image";
 
 const ImageGalleryMain = ({ images }) => {
-  console.log(images)
   return (
     <>
       <div className="img-gallery-main">
