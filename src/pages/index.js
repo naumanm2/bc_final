@@ -7,7 +7,7 @@ import ImageGalleryMain from '../components/imagegallerymain'
 import Slogan from '../components/slogan'
 import Footer from '../components/footer'
 import Logo from '../components/logo'
-import Sidebar from '../components/sidebar'
+// import Sidebar from '../components/sidebar'
 
 import { graphql } from 'gatsby'
 
