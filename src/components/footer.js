@@ -15,7 +15,7 @@ const Footer = () => {
                 <Link to="/lunch">lunch</Link>
               </li>
               <li className="i2">
-                <Link to="/alacarte">à la carte</Link>
+                <Link to="/menu">menu</Link>
               </li>
               <li className="i3">
                 <Link to="/wine">wine</Link>
@@ -29,9 +29,8 @@ const Footer = () => {
             <ul className="left-opening-times">
               <li className="i1">040-7092543</li>
               <li className="i2">hernesaarenkatu 17</li>
-              <li className="i3">ma-to 11-21</li>
-              <li className="i4">pe-la 12-21</li>
-              <li className="i5">su 12-21</li>
+              <li className="i3">ma-pe 11-22</li>
+              <li className="i4">la-su 12-22</li>
             </ul>
             <ul className="right-media-links">
               <li className="i1">

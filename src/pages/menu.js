@@ -10,14 +10,16 @@ import Slogan from "../components/slogan";
 import { StaticImage } from "gatsby-plugin-image";
 
 const alacarte = () => {
-  const image = <StaticImage src="../menus/menu-screens_offwhite.png" alt="à la carte" />;
+  const image = <StaticImage src="../menus/menu/menu_screens.png" alt="à la carte" />;
+  const image2 = <StaticImage src="../menus/menu/menu_screens4.png" alt="à la carte" />;
   return (
     <>
       <Header />
       <Logo />
-      <AboutMenu headline="à la carte" />
+      <AboutMenu headline="menu" />
       <Menu menu={image} />
-      <Sidebar active="alacarte" />
+      <Menu menu={image2} />
+      <Sidebar active="menu" />
       <Slogan />
       <Footer />
     </>

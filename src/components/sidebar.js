@@ -10,8 +10,8 @@ const Sidebar = ({ active }) => {
           <li className={"i1 lunch" + (active === "lunch" ? " active" : "")}>
             <Link to="/lunch">lunch</Link>
           </li>
-          <li className={"i2 alacarte " + ( active  === "alacarte" ? "active" : "")}>
-            <Link to="/alacarte">à la carte</Link>
+          <li className={"i2 menu " + ( active  === "menu" ? "active" : "")}>
+            <Link to="/menu">menu</Link>
           </li>
           <li className={"i3 wine " + ( active  === "wine" ? "active" : "")}>
             <Link to="/wine">wine</Link>
