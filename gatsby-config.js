@@ -5,10 +5,17 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "burger company website",
+    titleTemplate: "burgers. beer. natural wine",
+    description: 
+      "Restaurant for burgers, beer and natural wine. Enjoy with or without company. Order in, order out from Wolt or Foodora.",
+    image: "/images/front.jpg",
+    url: "https://www.burgercompany.fi",
+    instagramUsername: "@burgercompanyhki",
   },
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
+    "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {

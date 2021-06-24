@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Header from '../components/header'
+import SEO from '../components/seo'
 import Hero from '../components/hero'
 import About from '../components/about'
 import ImageGalleryMain from '../components/imagegallerymain'
@@ -16,6 +17,7 @@ import '../styles/styles.scss'
 const index = ({data}) => {
   return (
     <>
+    <SEO />
     <Header />
     <Hero />
     <Logo />

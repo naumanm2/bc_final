@@ -12,7 +12,7 @@ const Header = () => {
             <Logo className="logo" />
           </Link>
           <div className="nav-menu">
-            <div className="upper-nav">rather stay in?</div>
+            {/* <div className="upper-nav">rather stay in?</div> */}
             <nav className="nav-links">
               <ul>
                 <li className="i1">

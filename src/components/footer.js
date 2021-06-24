@@ -39,7 +39,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="i2">
-                <a href="https://www.facebook.com/helsinkiburgerco/">
+                <a href="https://www.facebook.com/burgercompanyhki/">
                   facebook
                 </a>
               </li>
