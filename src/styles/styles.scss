@@ -162,7 +162,7 @@ header {
     left: 50%;
     transform: translate(-40%, -70%);
     @media (max-width: 768px) {
-      top: 45%;
+      top: 40%;
     }
     ul {
       display: inline-block;
@@ -225,7 +225,7 @@ header {
   justify-content: flex-start;
   align-items: flex-end;
   @media (max-width: 768px) {
-    bottom: 90px;
+    bottom: 150px;
   }
   .lcol {
     width: 32.33%;
