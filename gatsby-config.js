@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "burger company website",
+    title: "burger company hki",
     titleTemplate: "burgers. beer. natural wine",
     description: 
       "Restaurant for burgers, beer and natural wine. Enjoy with or without company. Order in, order out from Wolt or Foodora.",

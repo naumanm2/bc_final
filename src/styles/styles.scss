@@ -155,7 +155,6 @@ header {
   position: relative;
   top: 0;
   height: 80vh;
-  min-height: -webkit-fill-available;
   .main-list {
     position: absolute;
     text-align: center;
@@ -226,9 +225,6 @@ header {
   justify-content: flex-start;
   align-items: flex-end;
   @media (max-width: 768px) {
-    .safari10 {
-      bottom: 150px;
-    }
     @supports (-webkit-touch-callout: none) {
       bottom: 150px;
     }
