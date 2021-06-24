@@ -226,12 +226,10 @@ header {
   align-items: flex-end;
   @media (max-width: 768px) {
     @supports (-webkit-touch-callout: none) {
-      .safari10 {
-        bottom: 150px;
-      }
-      
+      @supports (-webkit-text-size-adjust:none) and (not (-ms-ime-align:auto)) and (not (-moz-appearance:none)) {
+      bottom: 150px;
     }
-   
+  }
     // height: 100vh;
   }
   .lcol {
