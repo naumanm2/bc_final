@@ -226,7 +226,10 @@ header {
   align-items: flex-end;
   @media (max-width: 768px) {
     @supports (-webkit-touch-callout: none) {
-      bottom: 150px;
+      .safari10 {
+        bottom: 150px;
+      }
+      
     }
    
     // height: 100vh;
