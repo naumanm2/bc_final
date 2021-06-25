@@ -31,9 +31,11 @@ const SEO = ({ title, description, lang, image, keywords }) => {
             }}
             title={seo.title} 
             titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}>
+
         <meta name="description" content={seo.description} />
         <meta name="image" content={seo.image} />
         <meta name="keywords" content={seo.keywords} />
+        
         {seo.url && <meta property="og:url" content={seo.url} />}
         {/* {(article ? true : null) && <meta property="og:type" content="article" />} */}
         {seo.title && <meta property="og:title" content={seo.title} />}
