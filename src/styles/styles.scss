@@ -157,6 +157,7 @@ header {
   height: 80vh;
   width: 100vw;
   min-height: -webkit-fill-available;
+  min-height: auto;
   .main-list {
     position: absolute;
     text-align: center;
