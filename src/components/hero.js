@@ -10,16 +10,16 @@ const Hero = () => {
             <ul className="list">
               <div className="main-list-items">
                 <li className="item i1">
-                  <Link to="/lunch">lunch</Link>
+                  <Link to="/lunch/">lunch</Link>
                 </li>
                 <li className="item i2">
-                  <Link to="/menu">menu</Link>
+                  <Link to="/menu/">menu</Link>
                 </li>
                 <li className="item i3">
-                  <Link to="/wine">wine</Link>
+                  <Link to="/wine/">wine</Link>
                 </li>
                 <li className="item i4">
-                  <Link to="/beer">beer</Link>
+                  <Link to="/beer/">beer</Link>
                 </li>
               </div>
             </ul>

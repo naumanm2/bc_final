@@ -12,16 +12,16 @@ const Footer = () => {
           <div className="links">
             <ul className="lower-links">
               <li className="i1">
-                <Link to="/lunch">lunch</Link>
+                <Link to="/lunch/">lunch</Link>
               </li>
               <li className="i2">
-                <Link to="/menu">menu</Link>
+                <Link to="/menu/">menu</Link>
               </li>
               <li className="i3">
-                <Link to="/wine">wine</Link>
+                <Link to="/wine/">wine</Link>
               </li>
               <li className="i4">
-                <Link to="/beer">beer</Link>
+                <Link to="/beer/">beer</Link>
               </li>
             </ul>
           </div>

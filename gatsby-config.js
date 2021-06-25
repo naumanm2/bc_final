@@ -12,7 +12,7 @@ module.exports = {
     author: "@burgercompanyhki",
     url: "https://www.burgercompany.fi",
     twitterUsername: "@burgercompanyhki",
-    keywords: `burgers, natural wine, craft beer, restaurant`,
+    keywords: `burgers, natural wine, craft beer, restaurant, hampurilainen, helsinki`,
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -21,7 +21,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: "274010639",
+        trackingId: "G-C6XXJ7759W",
+        head: true,
       },
     },
     {
