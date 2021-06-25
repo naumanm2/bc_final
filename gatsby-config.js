@@ -12,6 +12,7 @@ module.exports = {
     image: "../images/front.jpg",
     author: "@burgercompanyhki",
     url: "https://www.burgercompany.fi",
+    siteUrl: "https://www.burgercompany.fi",
     twitterUsername: "@burgercompanyhki",
     keywords: `burgers, natural wine, craft beer, restaurant, hampurilainen, helsinki`,
   },
