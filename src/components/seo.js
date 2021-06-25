@@ -1,41 +1,49 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
 
-const SEO = ({ title, description, image, article }) => {
+const SEO = ({ title, description, lang, image, keywords }) => {
     const { pathname } = useLocation()
     const { site } = useStaticQuery(query)
 
     const {
         defaultTitle,
-        titleTemplate,
         defaultDescription,
         siteUrl,
         defaultImage,
-        instagramUsername,
+        twitterUsername,
+        defaultKeywords
       } = site.siteMetadata
       const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,
         image: `${siteUrl}${image || defaultImage}`,
         url: `${siteUrl}${pathname}`,
+        keywords: keywords || defaultKeywords
       }
       return (
-        <Helmet title={seo.title} titleTemplate={titleTemplate}>
+        <Helmet 
+            htmlAttributes={{
+                lang,
+            }}
+            title={seo.title} 
+            titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}>
         <meta name="description" content={seo.description} />
         <meta name="image" content={seo.image} />
+        <meta name="keywords" content={seo.keywords} />
         {seo.url && <meta property="og:url" content={seo.url} />}
-        {(article ? true : null) && <meta property="og:type" content="article" />}
+        {/* {(article ? true : null) && <meta property="og:type" content="article" />} */}
         {seo.title && <meta property="og:title" content={seo.title} />}
         {seo.description && (
           <meta property="og:description" content={seo.description} />
         )}
         {seo.image && <meta property="og:image" content={seo.image} />}
         <meta name="twitter:card" content="summary_large_image" />
-        {instagramUsername && (
-          <meta name="twitter:creator" content={instagramUsername} />
+        {twitterUsername && (
+          <meta name="twitter:creator" content={twitterUsername} />
         )}
         {seo.title && <meta name="twitter:title" content={seo.title} />}
         {seo.description && (
@@ -48,6 +56,19 @@ const SEO = ({ title, description, image, article }) => {
 
 export default SEO;
 
+SEO.defaultProps = {
+    lang: `en`,
+    meta: [],
+    description: ``,
+  }
+
+  SEO.propTypes = {
+    description: PropTypes.string,
+    lang: PropTypes.string,
+    meta: PropTypes.arrayOf(PropTypes.object),
+    title: PropTypes.string.isRequired,
+  }
+
 
 const query = graphql`
   query SEO {
@@ -58,7 +79,8 @@ const query = graphql`
         defaultDescription: description
         siteUrl: url
         defaultImage: image
-        instagramUsername
+        twitterUsername
+        keywords
       }
     }
   }

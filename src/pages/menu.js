@@ -1,5 +1,6 @@
 import React from "react";
 
+import SEO from "../components/seo";
 import Header from "../components/header";
 import Logo from "../components/logo";
 import Sidebar from "../components/sidebar";
@@ -14,6 +15,9 @@ const alacarte = () => {
   const image2 = <StaticImage src="../menus/menu/menu_screens4.png" alt="à la carte" />;
   return (
     <>
+      <SEO 
+        title="menu"
+        />
       <Header />
       <Logo />
       <AboutMenu headline="menu" />

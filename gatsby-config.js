@@ -1,16 +1,18 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
 module.exports = {
   siteMetadata: {
-    title: "burger company hki",
+    title: "burger company",
     titleTemplate: "burgers. beer. natural wine",
-    description: 
+    description:
       "Restaurant for burgers, beer and natural wine. Enjoy with or without company. Order in, order out from Wolt or Foodora.",
-    image: "/images/front.jpg",
+    image: "../images/front.jpg",
+    author: "@burgercompanyhki",
     url: "https://www.burgercompany.fi",
-    instagramUsername: "@burgercompanyhki",
+    twitterUsername: "@burgercompanyhki",
+    keywords: `burgers, natural wine, craft beer, restaurant`,
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -45,6 +47,20 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "burger company",
+        short_name: "burger company",
+        start_url: "/",
+        background_color: "#fff9f8",
+        theme_color: "#ffbdbf",
+        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+        display: "standalone",
+        icon: "src/icons/favicon_black copy@4x.png", // This path is relative to the root of the site.
+      },
     },
   ],
 };

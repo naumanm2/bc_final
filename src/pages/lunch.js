@@ -1,6 +1,7 @@
 import React from "react";
 
 import Header from "../components/header";
+import SEO from "../components/seo";
 import Logo from "../components/logo";
 import Sidebar from "../components/sidebar";
 import Menu from "../components/menu";
@@ -14,6 +15,7 @@ const lunch = () => {
   const image = <StaticImage src="../menus/menu/menu_screens5.png" alt="a la carte" />;
   return (
     <>
+      <SEO title="lunch" />
       <Header />
       <Logo />
       <AboutMenu headline="lunch list" />

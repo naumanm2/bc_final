@@ -17,7 +17,7 @@ import '../styles/styles.scss'
 const index = ({data}) => {
   return (
     <>
-    <SEO />
+    <SEO title="burgers. beer. natural wine."/>
     <Header />
     <Hero />
     <Logo />
