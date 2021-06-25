@@ -158,6 +158,7 @@ header {
   height: 80vh;
   min-height: -webkit-fill-available;
   min-height: auto;
+
   .main-list {
     position: absolute;
     text-align: center;
@@ -221,7 +222,8 @@ header {
 }
 .lower-main {
   position: absolute;
-  bottom: 40px;
+  top: 445px;
+  // bottom: 50px;
   width: 90vw;
   margin: auto;
   display: flex;
