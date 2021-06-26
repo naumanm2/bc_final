@@ -232,10 +232,10 @@ header {
   justify-content: flex-start;
   align-items: flex-end;
   @media (max-width: 768px) {
-    //   @supports (-webkit-touch-callout: none) {
+       @supports (-webkit-touch-callout: none) {
     //     @supports (-webkit-text-size-adjust:none) and (not (-ms-ime-align:auto)) and (not (-moz-appearance:none)) {
-    //     bottom: 150px;
-    //   }
+        bottom: 150px;
+      }
     // }
     // height: 100vh;
   }
