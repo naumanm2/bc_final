@@ -17,12 +17,14 @@ $font: "Palatino", "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
 @font-face {
   font-family: Olavi;
   src: url("../fonts/Olavi-Regular.otf") format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Olavi;
   font-weight: bold;
   src: url("../fonts/Olavi-Bold.otf") format("opentype");
+  font-display: swap;
 }
 
 html,

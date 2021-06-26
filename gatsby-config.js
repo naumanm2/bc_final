@@ -8,13 +8,17 @@ module.exports = {
     title: "burger company",
     titleTemplate: "burgers. beer. natural wine",
     description:
-      "Restaurant for burgers, beer and natural wine. Enjoy with or without company. Order in, order out from Wolt or Foodora.",
+      `burger company is a restaurant for burgers, beer and natural wine in Helsinki. 
+      Enjoy with or without company. 
+        Order in, takeaway from us or from Wolt or Foodora.`,
     image: "../images/front.jpg",
     author: "@burgercompanyhki",
     url: "https://www.burgercompany.fi",
     siteUrl: "https://www.burgercompany.fi",
     twitterUsername: "@burgercompanyhki",
-    keywords: `burgers, natural wine, craft beer, restaurant, hampurilainen, helsinki`,
+    keywords: `burger company, burgers, natural wine, 
+    craft beer, restaurant, lunch, hampurilainen, helsinki, 
+    street food`,
   },
   plugins: [
     "gatsby-plugin-sass",
