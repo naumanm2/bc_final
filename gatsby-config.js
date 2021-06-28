@@ -33,7 +33,7 @@ module.exports = {
           process.env.TRACKING_ID, // Google Analytics / GA
         ],
         pluginConfig: {
-          head: false,
+          head: true,
           anonymize_ip: true,
         },
       },
