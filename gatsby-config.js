@@ -8,17 +8,13 @@ module.exports = {
     title: "burger company",
     titleTemplate: "burgers. beer. natural wine",
     description:
-      `burger company is a restaurant for burgers, beer and natural wine in Helsinki. 
-      Enjoy with or without company. 
-        Order in, takeaway from us or from Wolt or Foodora.`,
-    image: "../images/front.jpg",
+      `burger company is a restaurant for burgers, beer and natural wine in Helsinki. Enjoy with or without company. Order in, takeaway from us or from Wolt or Foodora.`,
+    image: "src/images/front.jpg",
     author: "@burgercompanyhki",
     url: "https://www.burgercompany.fi",
     siteUrl: "https://www.burgercompany.fi",
     twitterUsername: "@burgercompanyhki",
-    keywords: `burger company, burgers, natural wine, 
-    craft beer, restaurant, lunch, hampurilainen, helsinki, 
-    street food`,
+    keywords: `burger company, burgers, natural wine, craft beer, restaurant, lunch, hampurilainen, helsinki, street food`,
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -37,7 +33,7 @@ module.exports = {
           process.env.TRACKING_ID, // Google Analytics / GA
         ],
         pluginConfig: {
-          head: true,
+          head: false,
           anonymize_ip: true,
         },
       },
@@ -70,14 +66,13 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "burger company",
+        lang: "en",
         short_name: "burger company",
         start_url: "/",
         background_color: "#fff9f8",
         theme_color: "#ffbdbf",
-        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
-        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: "standalone",
-        icon: "src/icons/favicon_black copy@4x.png", // This path is relative to the root of the site.
+        icon: "src/icons/favicon_black copy@4x.png",
       },
     },
   ],
