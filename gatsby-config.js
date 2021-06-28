@@ -9,7 +9,7 @@ module.exports = {
     titleTemplate: "burgers. beer. natural wine",
     description:
       `burger company is a restaurant for burgers, beer and natural wine in Helsinki. Enjoy with or without company. Order in, takeaway from us or from Wolt or Foodora.`,
-    image: "src/images/front.jpg",
+    image: "/src/images/front.jpg",
     author: "@burgercompanyhki",
     url: "https://www.burgercompany.fi",
     siteUrl: "https://www.burgercompany.fi",
