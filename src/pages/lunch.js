@@ -12,7 +12,7 @@ import Footer from "../components/footer";
 import { StaticImage } from "gatsby-plugin-image";
 
 const lunch = () => {
-  const image = <StaticImage src="../menus/menu/menu_screens5.png" alt="a la carte" />;
+  const image = <StaticImage src="../menus/menu/menu_27.png" alt="a la carte" />;
   return (
     <>
       <SEO title="lunch" />
