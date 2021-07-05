@@ -18,8 +18,8 @@ const lunch = () => {
       <SEO title="lunch" />
       <Header />
       <Logo />
-      <AboutMenu headline="lunch list" />
-      <Menu menu={image} />
+      <AboutMenu headline="lunch list" paragraph={true}/>
+      {/* <Menu menu={image} /> */}
       <Sidebar active="lunch" />
       <Slogan />
       <Footer />

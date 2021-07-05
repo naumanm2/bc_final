@@ -1,9 +1,6 @@
 import React from "react";
 
-const AboutMenu = ({headline}) => {
-
-  
-
+const AboutMenu = ({ headline, paragraph }) => {
   return (
     <div className="about-menu">
       <div className="container">
@@ -20,6 +17,15 @@ const AboutMenu = ({headline}) => {
           <h1 className="i9">{headline[9]}</h1>
           {/* <p></p> */}
         </div>
+        {paragraph && (
+          <p>
+            check out lunch menu from <br></br>
+            <a href="https://www.instagram.com/burgercompanyhki/">
+              instagram
+            </a>{" "}
+            or <a href="https://www.facebook.com/burgercompanyhki/">facebook</a>
+          </p>
+        )}
         {/* <div className="img-wrapper">
           <div className="menu-image">
           </div>
