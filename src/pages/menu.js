@@ -10,6 +10,8 @@ import AboutMenu from "../components/aboutmenu";
 import Slogan from "../components/slogan";
 import { StaticImage } from "gatsby-plugin-image";
 
+import '../styles/styles.scss'
+
 const alacarte = () => {
   const image = (
     <StaticImage src="../menus/menu/menu_screens.png" alt="à la carte" />
